@@ -247,6 +247,20 @@ html{
     justify-content: center;
     margin-right: 2vmin;
 }
+.button-game{
+    height: 6vmin;
+    width: 15vmin;
+    background-color: rgb(0, 0, 0);
+    border-radius:20px ;
+    font-size: 2vmin;
+    font-weight: bolder;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2vmin;
+}
 
 
 

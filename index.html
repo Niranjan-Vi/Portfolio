@@ -6,58 +6,65 @@
     <title>Document</title>
 </head>
 <body id="main">
-    <div class="name">   
-            <div class="cont">NIRANJAN   V</div>
+    <div class="main-cont">
+        <div class="context">
+            <h1>Niranjan Vi</h1>
+            <div class="line"></div>
+        </div>
     </div>
-    
+
 </body>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
     body{
     background-color: rgb(0, 0, 0);
 }
-.name{
-height:90vh;
-width:98.3vw;
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
+.main-cont{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.cont{
-    font-size: 7vmin;
-    font-weight: bolder;
-    word-spacing: 4vmin;
-    animation: move 1.5s 1;
-    position: absolute;
-    border-radius: 20px;
-    padding: 3vmin;
-    background-color: transparent;
-    box-shadow: 0vmin  0vmin 6vmin white;
-}
+.context{
+height: 100px;
+width: 300px;
+background-color: transparent;
+border-radius:20px;
 
-.cont::after{
-    content: "/>";
-    color:blue;
 }
-@keyframes move {
+.context h1{
+    font-size: 59px;
+    color: rgb(39, 213, 8);
+}
+.line{
+    height: 8px;
+    background-color: rgb(11, 26, 237);
+    animation:line-move 1.2s linear 1;
+    position: relative;
+    left: -20px;
+    width: 0;
+}
+@keyframes line-move {
     0%{
-       transform:scale(1);
-       
+        width:0px;
     }
     50%{
-        transform:scale(1.5);
-        transition: ease-in-out;
-        /* background-image: linear-gradient(45deg, blue,white,rgb(216, 24, 24)); */
-        color: rgb(255, 255, 255);
-        text: transform 0.3s; 
+        width: 350px;
+       
     }
-   
     100%{
-        transform:scale(1);
+        width: 0;
         
     }
     
 }
+    
+
 </style>
 <script>
     main=document.getElementById('main');

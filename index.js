@@ -28,6 +28,11 @@ xo=document.getElementById('xo');
 xo.addEventListener('click',()=>{
     window.location.href="https://nv-x-o-game.netlify.app/";
 });
+pikachu=document.getElementById('pikachu');
+pikachu.addEventListener('click',()=>{
+    window.location.href="https://dragoxpika.netlify.app/";
+});
+
 
 
 
